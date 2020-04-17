@@ -4,6 +4,26 @@
       .il, .il > li {
         display: inline;
       }
+
+      .arrow-down {
+        display: inline-block;
+        margin-right: 4px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 5px 0 5px;
+        border-color: #000000 transparent transparent transparent;
+      }
+
+      .arrow-right {
+        display: inline-block;
+        margin-right: 4px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent #000000;
+      }
     </style>
   </head>
 
@@ -12,7 +32,7 @@
   <h1>States</h1>
 
   <div class='hideableList'>
-    <p class='hl-header'>A list of states</p>
+    <p class='hl-header'><div class="arrow-down"></div>A list of states</p>
     <ul>
       <li>Alabama</li>
       <li>Alaska</li>
@@ -27,7 +47,7 @@
 
   <h1>Counties</h1>
   <div class='hideableList'>
-    <p class='hl-header'>A list of counties</p>
+    <p class='hl-header'><div class="arrow-down"></div>A list of counties</p>
     <ul>
       <li>Allegan</li>
       <li>Kent</li>
@@ -39,7 +59,7 @@
 
   <h1>Ordinals</h1>
   <div class='hideableList'>
-    <span class='hl-header'>Ordinals: </span>
+    <span class='hl-header'><div class="arrow-down"></div>Ordinals: </span>
     <ul class='il'>
       <li>First,</li>
       <li>Second,</li>
@@ -51,7 +71,7 @@
 
   <h1>Ordered List</h1>
   <div class='hideableList'>
-    <span class='hl-header'>Ordinals: </span>
+    <span class='hl-header'><div class="arrow-down"></div>Ordinals: </span>
     <ol>
       <li>First,</li>
       <li>Second,</li>

@@ -1,9 +1,9 @@
 <html>
     <style>
         #totalRow{
-            border-top: 2px;
             font-weight: bold;
             font-size: large;
+            border-top: 1px solid rgb(0, 0, 0);
         }
     </style>
 <body>
@@ -61,11 +61,14 @@
       
       let totLabel = document.createElement("td");
       totLabel.innerHTML = "Total: ";
+      totLabel.style = "border-top: 2px solid #000";
 
       let totSpacer = document.createElement("td");
+      totSpacer.style = "border-top: 2px solid #000";
 
       let totCost = document.createElement("td");
       totCost.innerHTML = "$" + totalPrice;
+      totCost.style = "border-top: 2px solid #000";
 
       totRow.appendChild(totLabel);
       totRow.appendChild(totSpacer);
